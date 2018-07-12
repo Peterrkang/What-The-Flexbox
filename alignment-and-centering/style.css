@@ -159,10 +159,11 @@ input::-moz-focus-inner {
 /* Some default styles to make each box visible */
 .box {
   color: white;
-  font-size: 10px;
+  font-size: 100px;
   text-align: center;
   text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
   padding: 10px;
+  width: 33.333%;
 }
 
 /* Colours for each box */
@@ -197,15 +198,22 @@ input::-moz-focus-inner {
   background: #16a085;
 }
 
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
 /* We start writing out flexbox here. The above is just page setup */
+/*
 .container {
   display: flex;
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
 }
-
-/*
+NOTES
 alignment/centering
 main axis- Xaxis
 cross axis - Yaxis
@@ -214,6 +222,10 @@ flex-end - starts at right side
 center - align center
 space-between - diviy space
 space-around - spacing on left and right
-
-
+align-items - needs some sort of height
+flex-start, end, stretch, baseline
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+align-content - only works on multiple lines of code on cross access
+justify - horizontal
+align - vertical
 */
