@@ -56,7 +56,6 @@ a.button {
 
 
 .icon-bar a {
-  flex:1;
   text-align: center;
   padding:1.5rem;
   border-left:1px solid rgba(0,0,0,0.1);
@@ -90,6 +89,34 @@ a.button {
   padding:1rem;
 }
 
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-wrap > * {
+  flex: 1 1 auto;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-bar {
+  display: flex;
+}
+
+.icon-bar a {
+  flex: 1;
+}
+
+.content {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
 
 /*
   Everything So far is Cosmetic styling 
